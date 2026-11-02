@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://nexgenfinancialexperts.com
+Sitemap: https://nexgenfinancialexperts.com/sitemap.xml
