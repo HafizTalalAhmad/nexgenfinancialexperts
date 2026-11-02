@@ -1,3 +1,4 @@
+import path from "node:path";
 import type { NextConfig } from "next";
 
 // Security headers applied to every response (Node/server deployments).
@@ -40,15 +41,33 @@ const legacyRedirects = [
 // replaces the Node contact API in that mode.
 const isStaticExport = process.env.NEXT_EXPORT === "1";
 
+// `output: "standalone"` is a PRODUCTION build mode. Running it during
+// `next dev` triggers Next's file-tracer alongside Turbopack and is a major
+// cause of the "frequent file updates detected in node_modules" warning.
+// Only enable it for production builds (next build / next start).
+const isProdBuild = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
+  // Set Turbopack's root so it can tell your source files apart from
+  // node_modules cache writes. Fixes the "turbopack.root is not set" warning.
+  turbopack: {
+    root: path.join(__dirname),
+  },
   ...(isStaticExport
     ? { output: "export" as const, trailingSlash: true, images: { unoptimized: true } }
-    : { output: "standalone" as const }),
+    : isProdBuild
+      ? { output: "standalone" as const }
+      : {}),
   typescript: {
     ignoreBuildErrors: true,
   },
   reactStrictMode: false,
   poweredByHeader: false,
+  // Tell Next's file watcher to ignore paths that change frequently during dev
+  // (logs, the .next cache, the standalone trace output, editor caches).
+  // Without this on Windows, Defender re-scans those files and Turbopack
+  // re-reads them, producing the "waiting for file system to stabilize" loop.
+  outputFileTracingRoot: path.join(__dirname),
   ...(isStaticExport
     ? {}
     : {
