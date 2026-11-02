@@ -1,0 +1,53 @@
+name: Deploy to HosterPK
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-hosterpk
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static export
+        run: bash scripts/build_static.sh
+        env:
+          NEXT_PUBLIC_CONTACT_ENDPOINT: /contact.php
+
+      - name: Verify build output
+        run: |
+          test -f out/index.html
+          test -f out/contact.php
+          test -f out/.htaccess
+          echo "Build output OK"
+
+      - name: Sync to HosterPK via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          local-dir: ./out/
+          server-dir: ${{ secrets.FTP_PATH }}/
+          exclude: |
+            **/.git/**
+            **/node_modules/**
+            *.md
+            *.log
+          dangerous-clean-slate: false
