@@ -21,9 +21,9 @@ import { SectionHeading, CtaBanner } from "@/components/site/section-blocks";
 import { services } from "@/lib/services";
 
 export const metadata: Metadata = {
-  title: "Services — Accounting, Tax, Audit & Advisory",
+  title: "Services — Accounting, Tax & Advisory",
   description:
-    "Explore NexGen Financial Experts' services: CPA services, bookkeeping, tax advisory & planning, business tax filing, LLC & S-Corp structuring, crypto tax, real estate & eCommerce accounting, fractional CFO, audit, and payroll.",
+    "Explore NexGen Financial Experts' services: bookkeeping, tax advisory & planning, business tax filing, LLC & S-Corp structuring, crypto tax, real estate & eCommerce accounting, fractional CFO, and payroll.",
   alternates: { canonical: "/services" },
 };
 

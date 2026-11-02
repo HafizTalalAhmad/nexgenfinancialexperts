@@ -26,7 +26,7 @@ export function SiteFooter() {
               <Image src={site.logo} alt={site.logoAlt} width={176} height={56} className="h-9 w-auto" />
             </Link>
             <p className="mt-4 text-sm leading-6 text-white/70">
-              Practical accounting, tax, audit, and advisory support for businesses —
+              Practical accounting, tax, and advisory support for businesses —
               from our office in Fort Lauderdale to clients across Florida and beyond.
             </p>
             <div className="mt-5 flex items-center gap-3">

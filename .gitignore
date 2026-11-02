@@ -57,3 +57,7 @@ upload/
 
 # local sqlite dev data
 db/*.db
+
+package-lock.json
+prisma/*.db
+prisma/*.db-journal

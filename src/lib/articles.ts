@@ -57,7 +57,7 @@ export const articles: Article[] = [
       {
         heading: "4. Keep receipts attached to transactions",
         paragraphs: [
-          "For tax purposes, a bank statement line is not the same as documentation. Attach the receipt or invoice to each transaction in your accounting system while it is easy — a phone photo at the time of purchase is enough. If you ever face an audit, contemporaneous documentation is what protects deductions.",
+          "For tax purposes, a bank statement line is not the same as documentation. Attach the receipt or invoice to each transaction in your accounting system while it is easy — a phone photo at the time of purchase is enough. If your records are ever reviewed by the IRS or a lender, contemporaneous documentation is what protects deductions.",
         ],
       },
       {
@@ -124,62 +124,6 @@ export const articles: Article[] = [
         paragraphs: [
           "The value of forecasting is the reaction time it buys. If the model shows a low week six weeks out, you have options: accelerate collections, delay discretionary spending, talk to your lender before — not after — you need the line of credit, or adjust payment timing with vendors. Every one of those conversations is easier with six weeks of runway than six days.",
           "If you would like help building or reviewing a cash flow forecast for your business, NexGen Financial Experts works with owners across Fort Lauderdale and beyond. Reach out through our contact page.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "preparing-for-a-business-audit",
-    title: "Preparing for a Business Audit: A Practical Checklist",
-    excerpt:
-      "Audits reward preparation. This checklist walks through the records, reconciliations, and logistics to organize before an auditor ever arrives.",
-    date: "2026-08-20",
-    readMinutes: 6,
-    category: "Audit",
-    relatedService: "audit-services",
-    seo: {
-      title: "Business Audit Preparation Checklist | NexGen Financial Experts",
-      description:
-        "A practical pre-audit checklist for businesses and non-profits: records to organize, reconciliations to complete, and common pitfalls — NexGen Financial Experts.",
-    },
-    body: [
-      {
-        paragraphs: [
-          "Few words in business create as much background anxiety as \"audit.\" Yet in practice, audits are far less dramatic than they sound: an independent examination of your records and controls against your financial statements. The outcome depends less on accounting brilliance and far more on one factor you fully control — preparation.",
-        ],
-      },
-      {
-        heading: "Start with scope and timing",
-        paragraphs: [
-          "Clarify early what kind of audit you are facing and what period it covers. A lender-required financial statement audit, a non-profit compliance audit, and a tax examination each look at different things. Get the engagement letter or notice in writing, note every deadline, and work backward from those dates when planning your preparation.",
-        ],
-      },
-      {
-        heading: "The core checklist",
-        paragraphs: [
-          "Most audit pain traces back to a short list of gaps. Work through these before the auditors do:",
-        ],
-        bullets: [
-          "Bank and credit card reconciliations completed for every month in the audit period.",
-          "Financial statements that tie to your underlying books — no unexplained differences.",
-          "Fixed asset and depreciation schedules current and matching your records.",
-          "Loan documents, leases, and major contracts organized and retrievable.",
-          "Payroll records, filings, and contractor forms (W-2s/1099s) complete.",
-          "Prior-year audit findings and the corrections you made in response.",
-          "Documentation for significant transactions: sales agreements, purchases, related-party dealings.",
-        ],
-      },
-      {
-        heading: "Common pitfalls",
-        paragraphs: [
-          "The most expensive audit problems are usually self-inflicted: unrecorded liabilities, revenue recognized on the wrong timing, missing documentation for large or unusual transactions, and related-party dealings that were never formalized. If any of these describe your situation, fix and document them before the audit begins — auditors are far more forgiving of disclosed, corrected issues than of surprises.",
-        ],
-      },
-      {
-        heading: "During and after the audit",
-        paragraphs: [
-          "Designate one person as the point of contact, respond to document requests promptly, and keep a log of everything provided. Afterward, treat findings as a free consulting report: convert each one into a remediation task with an owner and a deadline.",
-          "Preparation takes real work, but it is work that pays for itself — in lower audit fees, faster completion, and findings that read as improvements rather than failures. If your organization needs audit preparation or internal audit support, NexGen Financial Experts can help. Contact our team to discuss your situation.",
         ],
       },
     ],

@@ -8,7 +8,7 @@ import { articles } from "@/lib/articles";
 export const metadata: Metadata = {
   title: "Insights & Updates — Practical Guidance for Business Owners",
   description:
-    "Educational articles from NexGen Financial Experts on bookkeeping, cash flow forecasting, audit preparation, and business tax topics — practical guidance for business owners.",
+    "Educational articles from NexGen Financial Experts on bookkeeping, cash flow forecasting, and business tax topics — practical guidance for business owners.",
   alternates: { canonical: "/insights" },
 };
 
@@ -33,7 +33,7 @@ export default function InsightsPage() {
             Practical Guidance for Business Owners
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-7 text-white/75 md:text-lg md:leading-8">
-            Educational articles on bookkeeping, cash flow, and audit readiness — general
+            Educational articles on bookkeeping, cash flow, and compliance readiness — general
             guidance to help you run a tighter, better-informed business.
           </p>
         </div>

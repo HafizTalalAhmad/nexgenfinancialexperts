@@ -27,71 +27,6 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    slug: "cpa-services",
-    title: "CPA Services",
-    shortTitle: "CPA Services",
-    icon: "BadgeCheck",
-    summary:
-      "Expert accounting, reporting, and tax compliance support for every type of business — from startups to established companies.",
-    heroTitle: "CPA Services for Every Business",
-    heroIntro: [
-      "Whether you're a startup, a corporation, or a freelancer — we've got your numbers covered. At NexGen, our CPA services are built to support every type of business, big or small.",
-      "We provide expert advice, organized reporting, and tax compliance tailored to your industry. Our goal is to make your finances easier to manage, so you can focus on growth. From day-to-day accounting to long-term strategy, we handle it all with precision.",
-    ],
-    offerings: [
-      {
-        title: "Tax Filing & Compliance",
-        text: "We handle complex tax filings for all business types, so you stay compliant, confident, and stress-free.",
-      },
-      {
-        title: "Monthly Financial Reporting",
-        text: "We prepare detailed reports that show how your business is performing. Track progress and make informed decisions.",
-      },
-      {
-        title: "Audit Preparation & Representation",
-        text: "Need to prepare for an audit? We prepare you for it and support you through the process with organized records and guidance.",
-      },
-    ],
-    audienceTitle: "Who Counts on Our CPAs?",
-    audience: [
-      "Established business owners",
-      "Startups and first-time founders",
-      "E-commerce sellers and dropshippers",
-      "Medical and wellness practices",
-      "Real estate investors and developers",
-      "Digital agencies and consultants",
-      "Restaurant and retail operators",
-      "Non-profits and community organizations",
-    ],
-    whyTitle: "Why Businesses Prefer NexGen CPAs",
-    why: [
-      "Tailored services for all business sizes",
-      "Clear communication and timely support",
-      "Always up to date on changing tax laws",
-      "Full-service CPA support under one roof",
-      "Scalable solutions that grow with you",
-    ],
-    faqs: [
-      {
-        q: "Do you work with businesses outside Fort Lauderdale?",
-        a: "Yes. While our office is in Fort Lauderdale, we support clients across Florida and in multiple states, including businesses that operate remotely.",
-      },
-      {
-        q: "How often will I receive financial reports?",
-        a: "Most clients receive monthly financial statements, but reporting frequency is tailored to your needs — quarterly and custom schedules are available.",
-      },
-      {
-        q: "Can you take over from my previous accountant?",
-        a: "Yes. We manage the handover process, review your prior records, and flag anything that needs correction before moving forward.",
-      },
-    ],
-    seo: {
-      title: "CPA Services in Fort Lauderdale, FL | NexGen Financial Experts",
-      description:
-        "CPA services for startups, corporations, and freelancers: tax filing & compliance, monthly financial reporting, and audit preparation. Fort Lauderdale, FL.",
-    },
-  },
-  {
     slug: "business-accounting-bookkeeping",
     title: "Business Accounting & Bookkeeping",
     shortTitle: "Accounting & Bookkeeping",
@@ -194,7 +129,7 @@ export const services: Service[] = [
       },
       {
         title: "Tax Compliance Services",
-        text: "We help you meet local, state, and federal tax laws. Avoid penalties and stay audit-ready at all times.",
+        text: "We help you meet local, state, and federal tax laws. Avoid penalties and stay compliant and review-ready at all times.",
       },
       {
         title: "Tax Return Review & Optimization",
@@ -681,67 +616,6 @@ export const services: Service[] = [
       title: "Financial Advisory for Startups | NexGen Financial Experts",
       description:
         "Startup budgeting, forecasting, cash-flow management, entity guidance, and investor readiness — financial advisory from NexGen Financial Experts.",
-    },
-  },
-  {
-    slug: "audit-services",
-    title: "Audit Services",
-    shortTitle: "Audit Services",
-    icon: "ShieldCheck",
-    summary:
-      "Independent audit support, internal audits, and audit readiness — thorough, organized, and compliance-focused.",
-    heroTitle: "Audit Services",
-    heroIntro: [
-      "An audit shouldn't be a fire drill. We help organizations prepare for, undergo, and learn from audits with organized records and clear processes.",
-      "From regulated audits to internal reviews, our team evaluates controls, tests processes, and helps you present financial information that stands up to scrutiny.",
-    ],
-    offerings: [
-      {
-        title: "Audit Preparation & Support",
-        text: "We organize records, reconcile balances, and prepare schedules so external audits proceed smoothly and on schedule.",
-      },
-      {
-        title: "Internal Audits",
-        text: "We evaluate your processes and controls, identify gaps, and recommend practical improvements that strengthen the business.",
-      },
-      {
-        title: "Compliance & Voluntary Audits",
-        text: "We support voluntary, charity, and compliance-driven audit needs where organizations benefit from independent financial review.",
-      },
-    ],
-    audienceTitle: "Who We Help",
-    audience: [
-      "Businesses facing their first external audit",
-      "Non-profits and community organizations",
-      "Companies strengthening internal controls",
-      "Organizations with lender or investor audit requirements",
-      "Teams recovering from disorganized records",
-    ],
-    whyTitle: "Why Audit Readiness Matters",
-    why: [
-      "Audits reward preparation — organized records mean lower cost and less stress",
-      "Internal reviews catch small problems before they become expensive ones",
-      "Strong controls build trust with lenders, investors, and boards",
-      "Findings become improvements, not setbacks, when handled proactively",
-    ],
-    faqs: [
-      {
-        q: "What's the difference between an internal and external audit?",
-        a: "An external audit is performed by an independent auditor, often for regulators, lenders, or donors. An internal audit is a management-driven review of controls and processes. We support both.",
-      },
-      {
-        q: "How far in advance should we prepare for an audit?",
-        a: "Ideally 2–3 months. But if your audit is sooner, we prioritize the schedules and reconciliations that matter most.",
-      },
-      {
-        q: "Can you fix issues found in a prior audit?",
-        a: "Yes. We translate audit findings into a remediation plan and help you implement and document the fixes.",
-      },
-    ],
-    seo: {
-      title: "Audit Services — Audit Prep & Internal Audit | NexGen",
-      description:
-        "Audit preparation, internal audits, and compliance-focused audit support for businesses and non-profits — NexGen Financial Experts, Fort Lauderdale.",
     },
   },
   {

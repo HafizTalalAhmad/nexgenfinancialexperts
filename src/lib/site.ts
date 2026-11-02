@@ -7,7 +7,7 @@ export const site = {
   shortName: "NexGen",
   tagline: "Transforming Your Financial Future",
   description:
-    "NexGen Financial Experts provides accounting, tax, audit, and business advisory services in Fort Lauderdale, FL — helping businesses stay compliant, make informed decisions, and grow with confidence.",
+    "NexGen Financial Experts provides accounting, tax, and business advisory services in Fort Lauderdale, FL — helping businesses stay compliant, make informed decisions, and grow with confidence.",
   url: "https://nexgenfinancialexperts.com",
   email: "paudalus@nexgenfinancialexperts.com",
   phone: "+1 (954) 306-3823",

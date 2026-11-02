@@ -39,12 +39,6 @@ const serviceHighlights = [
     href: "/services/business-accounting-bookkeeping",
   },
   {
-    icon: SearchCheck,
-    title: "Audit",
-    text: "Specialist audit support tailored to compliance requirements, thorough internal audits, and audit preparation for voluntary and charity organizations.",
-    href: "/services/audit-services",
-  },
-  {
     icon: Landmark,
     title: "Taxation",
     text: "Personal and corporate tax returns handled with precision, efficient payroll management, and expert advice on choosing the right business structures.",
@@ -65,7 +59,7 @@ const serviceHighlights = [
   {
     icon: HeartPulse,
     title: "Healthcare",
-    text: "Benchmarking and advisory, partnership tax expertise, and compliance support — including internal and external audit solutions for healthcare organizations.",
+    text: "Benchmarking and advisory, partnership tax expertise, and compliance support — for healthcare organizations.",
     href: "/services/tax-accounting",
   },
 ];
@@ -76,7 +70,7 @@ const industries = [
   { icon: Bitcoin, label: "Crypto & Digital Assets", href: "/services/crypto-tax-advisory-services" },
   { icon: Rocket, label: "Startups", href: "/services/financial-advisory-for-startups" },
   { icon: TrendingUp, label: "Growing Companies", href: "/services/startup-fractional-cfo-services" },
-  { icon: Users, label: "Professional Practices", href: "/services/cpa-services" },
+  { icon: Users, label: "Professional Practices", href: "/services/business-accounting-bookkeeping" },
 ];
 
 const reasons = [
@@ -88,7 +82,7 @@ const reasons = [
   {
     icon: ShieldCheck,
     title: "Experience You Can Rely On",
-    text: "With years of combined experience, our professionals bring deep industry knowledge across accounting, tax, and audit engagements.",
+    text: "With years of combined experience, our professionals bring deep industry knowledge across accounting, tax, and advisory engagements.",
   },
   {
     icon: Handshake,
@@ -206,7 +200,7 @@ export default function HomePage() {
             <p className="mt-3 text-lg font-medium text-white/90 md:text-xl">Expert Financial Guidance for Every Business</p>
             <p className="mt-4 max-w-xl text-base leading-7 text-white/70 md:text-lg md:leading-8">
               At {site.name}, we tailor strategies to ensure compliance while fostering your
-              business growth in a complex financial landscape — accounting, tax, audit, and
+              business growth in a complex financial landscape — accounting, tax, and
               advisory support you can rely on.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -375,7 +369,7 @@ export default function HomePage() {
             dark
           />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {["audit-services", "tax-advisory-planning-services", "startup-fractional-cfo-services"].map((slug) => {
+            {["business-accounting-bookkeeping", "tax-advisory-planning-services", "startup-fractional-cfo-services"].map((slug) => {
               const svc = services.find((s) => s.slug === slug)!;
               return (
                 <Link
@@ -409,15 +403,14 @@ export default function HomePage() {
               Discover Our Journey and Commitment to Your Success
             </h2>
             <p className="mt-4 text-base leading-7 text-muted-foreground md:text-lg md:leading-8">
-              {site.name} is a finance firm in Fort Lauderdale dedicated to providing customized
-              audit, tax, and advisory solutions that drive compliance and growth for businesses
+              {site.name} is a finance firm in Fort Lauderdale dedicated to providing customized tax, accounting, and advisory solutions that drive compliance and growth for businesses
               of all sizes. We don&apos;t just balance books — we build confidence.
             </p>
             <ul className="mt-6 space-y-3 text-sm text-foreground/85">
               {[
                 "Experienced professionals with a deep understanding of local and multi-state regulations",
                 "Customized strategies built around your business goals",
-                "End-to-end solutions — from audits and tax planning to consulting and compliance",
+                "End-to-end solutions — from accounting and tax planning to consulting and compliance",
                 "Transparent communication and reliable reporting",
               ].map((li) => (
                 <li key={li} className="flex items-start gap-3">
@@ -453,7 +446,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Insights & Updates"
             title="Helpful Resources for Business Owners"
-            subtitle="Practical guides on bookkeeping, cash flow, and audit readiness — written by our team."
+            subtitle="Practical guides on bookkeeping, cash flow, and compliance readiness — written by our team."
           />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {articles.map((a) => (

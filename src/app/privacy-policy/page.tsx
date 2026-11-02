@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
               <h2 className="font-display text-2xl font-semibold text-brand-navy">1. Who We Are</h2>
               <p className="mt-3">
                 {site.name} (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) provides
-                accounting, tax, audit, and business advisory services from our office at{" "}
+                accounting, tax, and business advisory services from our office at{" "}
                 {site.address.full}. This policy explains what information we collect through this
                 website, how we use it, and the choices you have.
               </p>

@@ -31,6 +31,13 @@ RewriteRule ^blog/?$       /insights/ [R=301,L]
 RewriteRule ^home/?$       /          [R=301,L]
 RewriteRule ^sample-page/?$ /         [R=301,L]
 
+# Removed service pages (CPA / Audit) - redirect to closest relevant page
+RewriteRule ^services/cpa-services/?$        /services/business-accounting-bookkeeping/ [R=301,L]
+RewriteRule ^services/audit-services/?$      /services/business-accounting-bookkeeping/ [R=301,L]
+
+# Removed insights article on audit preparation
+RewriteRule ^insights/preparing-for-a-business-audit/?$  /insights/ [R=301,L]
+
 # --- Long-cache immutable build assets ---
 <IfModule mod_headers.c>
   <FilesMatch "\.(js|css|woff2?|png|jpe?g|webp|svg|ico)$">

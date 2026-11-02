@@ -11,12 +11,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Us — Your Partner in Financial Growth",
   description:
-    "Learn about NexGen Financial Experts, a Fort Lauderdale finance firm providing tailored audit, tax advisory, and business consulting services built on trust, transparency, and transformation.",
+    "Learn about NexGen Financial Experts, a Fort Lauderdale finance firm providing tailored tax advisory, accounting, and business consulting services built on trust, transparency, and transformation.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About NexGen Financial Experts",
     description:
-      "A Fort Lauderdale team delivering audit, tax advisory, and business consulting built on trust, transparency, and transformation.",
+      "A Fort Lauderdale team delivering tax advisory, accounting, and business consulting built on trust, transparency, and transformation.",
     url: "/about",
   },
 };
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const whyItems = [
   "Experienced professionals with a deep understanding of global and local regulations.",
   "Customized strategies built around your business goals.",
-  "End-to-end solutions — from audits and tax planning to consulting and compliance.",
+  "End-to-end solutions — from accounting and tax planning to consulting and compliance.",
   "Transparent communication and reliable reporting.",
   "Dedicated client support that ensures peace of mind.",
 ];
@@ -78,7 +78,7 @@ export default function AboutPage() {
               <p>
                 At {site.name}, we believe that financial clarity is the foundation of every
                 successful business. Based in Fort Lauderdale, we are a team of dedicated
-                professionals offering tailored Audit, Tax Advisory, and Business Consulting
+                professionals offering tailored Tax Advisory, Accounting, and Business Consulting
                 services designed to help businesses thrive in an ever-changing financial world.
               </p>
               <p>

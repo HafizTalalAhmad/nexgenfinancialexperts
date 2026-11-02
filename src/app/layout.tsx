@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "bookkeeping Fort Lauderdale",
     "business tax services Florida",
     "fractional CFO startup",
-    "audit services Fort Lauderdale",
+    "payroll services Fort Lauderdale",
   ],
   authors: [{ name: site.name }],
   openGraph: {
