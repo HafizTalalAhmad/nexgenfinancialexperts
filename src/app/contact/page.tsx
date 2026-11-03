@@ -124,13 +124,26 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="mt-6 overflow-hidden rounded-xl border border-border">
+                        <div className="mt-6 overflow-hidden rounded-xl border border-border">
               <iframe
                 title={`Map showing the location of ${site.name} at ${site.address.full}`}
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-80.1409%2C26.1268%2C-80.1169%2C26.1428&layer=mapnik&marker=26.1348%2C-80.1289"
+                src="https://maps.google.com/maps?q=1975%20East%20Sunrise%20Blvd%20Suite%20705%20Fort%20Lauderdale%20FL%2033304&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 className="h-64 w-full"
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
+            </div>
+            <p className="mt-2 text-xs text-muted-foreground">
+              <MapPin className="inline h-3 w-3" aria-hidden="true" /> Plus Code:{" "}
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=4VQJ%2B67+Fort+Lauderdale+FL"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-primary"
+              >
+                4VQJ+67 Fort Lauderdale, Florida, USA
+              </a>
+            </p>
             </div>
           </div>
         </div>
