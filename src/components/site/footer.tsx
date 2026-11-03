@@ -112,10 +112,10 @@ export function SiteFooter() {
               </li>
             </ul>
                         <p className="mt-4 text-xs leading-5 text-white/50">{site.hours}</p>
-                                    <div className="mt-4 overflow-hidden rounded-lg border border-white/10">
+                                                <div className="mt-4 overflow-hidden rounded-lg border border-white/10">
               <iframe
                 title="Map showing NexGen Financial Experts office location in Fort Lauderdale"
-                src="https://maps.google.com/maps?q=Nexgen+Financial+Experts+1975+East+Sunrise+Blvd+Fort+Lauderdale+FL&z=14&output=embed"
+                src="https://maps.google.com/maps?q=26.1380488,-80.1192751&z=14&output=embed"
                 className="h-32 w-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
