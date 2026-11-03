@@ -111,7 +111,27 @@ export function SiteFooter() {
                 <a href={`mailto:${site.email}`} className="break-all text-white/70 hover:text-white">{site.email}</a>
               </li>
             </ul>
-            <p className="mt-4 text-xs leading-5 text-white/50">{site.hours}</p>
+                        <p className="mt-4 text-xs leading-5 text-white/50">{site.hours}</p>
+            <div className="mt-4 overflow-hidden rounded-lg border border-white/10">
+              <iframe
+                title="Map showing NexGen Financial Experts office location in Fort Lauderdale"
+                src="https://maps.google.com/maps?q=1975%20East%20Sunrise%20Blvd%20Suite%20705%20Fort%20Lauderdale%20FL%2033304&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                className="h-32 w-full"
+                loading="lazy"
+                referrerPolicy="no-referrer-When-downgrade"
+              />
+            </div>
+            <p className="mt-2 text-xs text-white/50">
+              Plus Code:{" "}
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=4VQJ%2B67+Fort+Lauderdale+FL"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-white"
+              >
+                4VQJ+67 Fort Lauderdale
+              </a>
+            </p>
           </div>
         </div>
       </div>
