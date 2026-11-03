@@ -65,6 +65,7 @@ public/images/         — official logo, favicon set, hero image
 - Contact form: server-side validation, per-IP rate limiting (5/10 min), honeypot + time-trap, no PII in URLs, data stored only in the DB (email optional via SMTP).
 - Security headers configured in `next.config.ts` (CSP, frame-options, nosniff, referrer/permissions policy).
 
-## Documentation
+## Documentation.
 
 Full project deliverables (audit, security, competitor research, keyword map, content & marketing strategy, QA, deployment, recovery checklist, analytics, 90-day roadmap) live in **`download/docs/`**.
+
