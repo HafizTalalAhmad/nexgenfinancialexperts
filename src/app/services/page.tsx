@@ -19,6 +19,7 @@ import {
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { SectionHeading, CtaBanner } from "@/components/site/section-blocks";
 import { services } from "@/lib/services";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Services — Accounting, Tax & Advisory",
