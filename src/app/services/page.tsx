@@ -48,16 +48,26 @@ export default function ServicesPage() {
     <>
       <Breadcrumbs items={[{ label: "Services" }]} />
 
-      <section className="bg-brand-navy py-14 md:py-20" aria-labelledby="services-hero">
-        <div className="container-site">
-          <p className="eyebrow text-brand-blue">What We Can Do for You</p>
-          <h1 id="services-hero" className="mt-2 max-w-3xl font-display text-4xl font-semibold leading-tight text-white md:text-5xl">
-            Comprehensive Financial Solutions
-          </h1>
-          <p className="mt-4 max-w-2xl text-base leading-7 text-white/75 md:text-lg md:leading-8">
-            At NexGen Financial Experts, we provide a full suite of tax, accounting, and advisory
-            services designed to streamline your finances and boost your success.
-          </p>
+      <section className="relative isolate overflow-hidden bg-brand-navy" aria-labelledby="services-hero">
+        <div className="absolute inset-0 -z-10">
+          <Image src="/images/entrepreneur.jpg" alt="" fill priority sizes="100vw" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-navy/90 to-brand-navy/50" aria-hidden="true" />
+        </div>
+        <div className="container-site relative py-16 md:py-24">
+          <div className="max-w-3xl">
+            <p className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-sm font-medium text-white/90 backdrop-blur-sm">
+              <ShieldCheck className="h-4 w-4 text-brand-blue" aria-hidden="true" />
+              11 Services, One Trusted Team
+            </p>
+            <p className="eyebrow text-brand-blue mt-4">What We Can Do for You</p>
+            <h1 id="services-hero" className="mt-2 font-display text-4xl font-semibold leading-[1.1] text-white md:text-5xl lg:text-6xl">
+              Comprehensive Financial Solutions
+            </h1>
+            <p className="mt-5 text-base leading-7 text-white/80 md:text-lg md:leading-8">
+              At NexGen Financial Experts, we provide a full suite of tax, accounting, and advisory
+              services designed to streamline your finances and boost your success.
+            </p>
+          </div>
         </div>
       </section>
 
