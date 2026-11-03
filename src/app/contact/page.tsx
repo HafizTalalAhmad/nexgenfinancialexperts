@@ -124,10 +124,10 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="mt-6 overflow-hidden rounded-xl border border-border">
+                        <div className="mt-6 overflow-hidden rounded-xl border border-border">
               <iframe
                 title={`Map showing the location of ${site.name} at ${site.address.full}`}
-                src="https://maps.google.com/maps?q=Nexgen+Financial+Experts+1975+East+Sunrise+Blvd+Fort+Lauderdale+FL&z=15&output=embed"
+                src="https://maps.google.com/maps?q=26.1380488,-80.1192751&z=15&output=embed"
                 className="h-64 w-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
