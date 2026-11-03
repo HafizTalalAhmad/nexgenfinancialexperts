@@ -112,19 +112,29 @@ export function SiteFooter() {
               </li>
             </ul>
                         <p className="mt-4 text-xs leading-5 text-white/50">{site.hours}</p>
-            <div className="mt-4 overflow-hidden rounded-lg border border-white/10">
+                        <div className="mt-4 overflow-hidden rounded-lg border border-white/10">
               <iframe
                 title="Map showing NexGen Financial Experts office location in Fort Lauderdale"
-                src="https://maps.google.com/maps?q=1975%20East%20Sunrise%20Blvd%20Suite%20705%20Fort%20Lauderdale%20FL%2033304&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps?q=4VQJ%2B67+Fort+Lauderdale+FL&z=14&output=embed"
                 className="h-32 w-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
               />
             </div>
+            <a
+              href="https://maps.app.goo.gl/RrLXhNwwAAiUXgua6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex items-center gap-2 rounded-lg bg-primary px-3 py-1.5 text-xs font-semibold text-white shadow-sm transition hover:bg-brand-magenta-dark"
+            >
+              <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
+              Get Directions
+            </a>
             <p className="mt-2 text-xs text-white/50">
               Plus Code:{" "}
               <a
-                href="https://www.google.com/maps/search/?api=1&query=4VQJ%2B67+Fort+Lauderdale+FL"
+                href="https://maps.app.goo.gl/RrLXhNwwAAiUXgua6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-white"
