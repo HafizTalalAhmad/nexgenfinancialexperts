@@ -18,7 +18,7 @@ const securityHeaders = [
       "img-src 'self' data: blob:",
       "font-src 'self' data:",
       "connect-src 'self'",
-      "frame-src 'self' https://www.openstreetmap.org https://www.google.com",
+      "frame-src 'self' https://www.openstreetmap.org https://www.google.com https://maps.google.com",
       "frame-ancestors 'self'",
       "base-uri 'self'",
       "form-action 'self'",
