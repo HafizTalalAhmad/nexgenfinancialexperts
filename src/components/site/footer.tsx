@@ -118,7 +118,7 @@ export function SiteFooter() {
                 src="https://maps.google.com/maps?q=1975%20East%20Sunrise%20Blvd%20Suite%20705%20Fort%20Lauderdale%20FL%2033304&t=&z=14&ie=UTF8&iwloc=&output=embed"
                 className="h-32 w-full"
                 loading="lazy"
-                referrerPolicy="no-referrer-When-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
             <p className="mt-2 text-xs text-white/50">
