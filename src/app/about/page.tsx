@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { CheckCircle2, Handshake, ShieldCheck, Target } from "lucide-react";
+import { CheckCircle2, Handshake, MapPin, ShieldCheck, Target } from "lucide-react";
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { SectionHeading, CtaBanner } from "@/components/site/section-blocks";
 import { Testimonials } from "@/components/site/testimonials";
