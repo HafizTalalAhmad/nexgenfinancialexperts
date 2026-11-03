@@ -74,7 +74,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+        <html lang="en" suppressHydrationWarning>
+      <head>
+        <GA4Script />
+      </head>
       <body
         className={`${inter.variable} ${serifDisplay.variable} ${geistMono.variable} antialiased bg-background text-foreground min-h-screen flex flex-col`}
       >
