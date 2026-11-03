@@ -144,7 +144,6 @@ export default function ContactPage() {
                 4VQJ+67 Fort Lauderdale, Florida, USA
               </a>
             </p>
-            </div>
           </div>
         </div>
       </section>
