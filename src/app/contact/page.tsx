@@ -48,19 +48,28 @@ export default function ContactPage() {
     <>
       <Breadcrumbs items={[{ label: "Contact" }]} />
 
-      <section className="bg-brand-navy py-14 md:py-20" aria-labelledby="contact-hero">
-        <div className="container-site">
-          <p className="eyebrow text-brand-blue">Need Help?</p>
-          <h1 id="contact-hero" className="mt-2 max-w-3xl font-display text-4xl font-semibold leading-tight text-white md:text-5xl">
-            Contact NexGen Financial Experts Today
-          </h1>
-          <p className="mt-4 max-w-2xl text-base leading-7 text-white/75 md:text-lg md:leading-8">
-            Need expert advice? We&apos;re here to answer your questions and guide your financial
-            journey.
-          </p>
+      <section className="relative isolate overflow-hidden bg-brand-navy" aria-labelledby="contact-hero">
+        <div className="absolute inset-0 -z-10">
+          <Image src="/images/handshake.jpg" alt="" fill priority sizes="100vw" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/95 to-brand-navy/60" aria-hidden="true" />
+        </div>
+        <div className="container-site relative py-16 md:py-24">
+          <div className="max-w-2xl">
+            <p className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-sm font-medium text-white/90 backdrop-blur-sm">
+              <Clock className="h-4 w-4 text-brand-blue" aria-hidden="true" />
+              Reply within 1 business day
+            </p>
+            <p className="eyebrow text-brand-blue mt-4">Need Help?</p>
+            <h1 id="contact-hero" className="mt-2 font-display text-4xl font-semibold leading-[1.1] text-white md:text-5xl lg:text-6xl">
+              Contact NexGen Financial Experts Today
+            </h1>
+            <p className="mt-5 text-base leading-7 text-white/80 md:text-lg md:leading-8">
+              Need expert advice? We&apos;re here to answer your questions and guide your financial
+              journey.
+            </p>
+          </div>
         </div>
       </section>
-
       <section className="section-pad" aria-labelledby="form-section">
         <div className="container-site grid items-start gap-12 lg:grid-cols-5">
           {/* Form */}
