@@ -53,16 +53,33 @@ export default function AboutPage() {
       <Breadcrumbs items={[{ label: "About" }]} />
 
       {/* Hero */}
-      <section className="bg-brand-navy py-14 md:py-20" aria-labelledby="about-hero">
-        <div className="container-site">
-          <p className="eyebrow text-brand-blue">About Us</p>
-          <h1 id="about-hero" className="mt-2 max-w-3xl font-display text-4xl font-semibold leading-tight text-white md:text-5xl">
-            Your Partner in Financial Growth
-          </h1>
-          <p className="mt-4 max-w-2xl text-base leading-7 text-white/75 md:text-lg md:leading-8">
-            Professional Financial Strategies Built for You — end-to-end support for every
-            financial challenge, from our office in Fort Lauderdale.
-          </p>
+      <section className="relative isolate overflow-hidden bg-brand-navy" aria-labelledby="about-hero">
+        <div className="absolute inset-0 -z-10">
+          <Image src="/images/office-building.jpg" alt="" fill priority sizes="100vw" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/95 to-brand-navy/60" aria-hidden="true" />
+        </div>
+        <div className="container-site relative py-16 md:py-24 lg:grid lg:grid-cols-2 lg:gap-14">
+          <div className="max-w-2xl">
+            <p className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-sm font-medium text-white/90 backdrop-blur-sm">
+              <MapPin className="h-4 w-4 text-brand-blue" aria-hidden="true" />
+              Fort Lauderdale, Florida
+            </p>
+            <p className="eyebrow text-brand-blue mt-4">About Us</p>
+            <h1 id="about-hero" className="mt-2 font-display text-4xl font-semibold leading-[1.1] text-white md:text-5xl lg:text-6xl">
+              Your Partner in Financial Growth
+            </h1>
+            <p className="mt-5 text-base leading-7 text-white/80 md:text-lg md:leading-8">
+              Professional Financial Strategies Built for You - end-to-end support for every
+              financial challenge, from our office in Fort Lauderdale.
+            </p>
+          </div>
+          <div className="hidden lg:block">
+            <div className="ml-auto max-w-sm rounded-2xl border border-white/15 bg-white/10 p-8 shadow-2xl backdrop-blur-md">
+              <p className="text-xs font-semibold uppercase tracking-wider text-brand-blue">Our Values</p>
+              <h2 className="mt-2 font-display text-2xl font-semibold text-white">Trust. Transparency. Transformation.</h2>
+              <p className="mt-3 text-sm leading-6 text-white/80">We do what we say we will do.</p>
+            </div>
+          </div>
         </div>
       </section>
 
