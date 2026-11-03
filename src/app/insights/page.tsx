@@ -26,16 +26,26 @@ export default function InsightsPage() {
     <>
       <Breadcrumbs items={[{ label: "Insights & Updates" }]} />
 
-      <section className="bg-brand-navy py-14 md:py-20" aria-labelledby="insights-hero">
-        <div className="container-site">
-          <p className="eyebrow text-brand-blue">Insights &amp; Updates</p>
-          <h1 id="insights-hero" className="mt-2 max-w-3xl font-display text-4xl font-semibold leading-tight text-white md:text-5xl">
-            Practical Guidance for Business Owners
-          </h1>
-          <p className="mt-4 max-w-2xl text-base leading-7 text-white/75 md:text-lg md:leading-8">
-            Educational articles on bookkeeping, cash flow, and compliance readiness — general
-            guidance to help you run a tighter, better-informed business.
-          </p>
+      <section className="relative isolate overflow-hidden bg-brand-navy" aria-labelledby="insights-hero">
+        <div className="absolute inset-0 -z-10">
+          <Image src="/images/business-meeting.jpg" alt="" fill priority sizes="100vw" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/95 to-brand-navy/60" aria-hidden="true" />
+        </div>
+        <div className="container-site relative py-16 md:py-24">
+          <div className="max-w-2xl">
+            <p className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-sm font-medium text-white/90 backdrop-blur-sm">
+              <ArrowRight className="h-4 w-4 text-brand-blue" aria-hidden="true" />
+              Practical Guidance for Business Owners
+            </p>
+            <p className="eyebrow text-brand-blue mt-4">Insights &amp; Updates</p>
+            <h1 id="insights-hero" className="mt-2 font-display text-4xl font-semibold leading-[1.1] text-white md:text-5xl lg:text-6xl">
+              Insights &amp; Updates
+            </h1>
+            <p className="mt-5 text-base leading-7 text-white/80 md:text-lg md:leading-8">
+              Educational articles on bookkeeping, cash flow, and compliance readiness - general
+              guidance to help you run a tighter, better-informed business.
+            </p>
+          </div>
         </div>
       </section>
 
