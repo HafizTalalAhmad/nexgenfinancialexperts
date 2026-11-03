@@ -124,19 +124,29 @@ export default function ContactPage() {
               </p>
             </div>
 
-                        <div className="mt-6 overflow-hidden rounded-xl border border-border">
+                                    <div className="mt-6 overflow-hidden rounded-xl border border-border">
               <iframe
                 title={`Map showing the location of ${site.name} at ${site.address.full}`}
-                src="https://maps.google.com/maps?q=1975%20East%20Sunrise%20Blvd%20Suite%20705%20Fort%20Lauderdale%20FL%2033304&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps?q=4VQJ%2B67+Fort+Lauderdale+FL&z=15&output=embed"
                 className="h-64 w-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
               />
             </div>
+            <a
+              href="https://maps.app.goo.gl/RrLXhNwwAAiUXgua6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-magenta-dark"
+            >
+              <MapPin className="h-4 w-4" aria-hidden="true" />
+              Get Directions
+            </a>
             <p className="mt-2 text-xs text-muted-foreground">
               <MapPin className="inline h-3 w-3" aria-hidden="true" /> Plus Code:{" "}
               <a
-                href="https://www.google.com/maps/search/?api=1&query=4VQJ%2B67+Fort+Lauderdale+FL"
+                href="https://maps.app.goo.gl/RrLXhNwwAAiUXgua6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-primary"
