@@ -89,9 +89,9 @@ export default async function ServicePage({
           </div>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg" className="bg-primary hover:bg-brand-magenta-dark">
-              <Link href="/contact">
-                Schedule a Consultation <ArrowRight className="ml-1 h-4 w-4" aria-hidden="true" />
-              </Link>
+              <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer">
+                Book a Free Consultation <ArrowRight className="ml-1 h-4 w-4" aria-hidden="true" />
+              </a>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white/25 bg-transparent text-white hover:bg-white/10 hover:text-white">
               <a href={site.phoneHref}>
