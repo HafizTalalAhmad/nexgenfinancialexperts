@@ -239,9 +239,9 @@ export default function HomePage() {
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg" className="bg-primary hover:bg-brand-magenta-dark">
-                <Link href="/contact">
-                  Schedule a Consultation <ArrowRight className="ml-1 h-4 w-4" aria-hidden="true" />
-                </Link>
+                <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer">
+                  Book a Free Consultation <ArrowRight className="ml-1 h-4 w-4" aria-hidden="true" />
+                </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white/30 bg-white/5 text-white backdrop-blur-sm hover:bg-white/15 hover:text-white">
                 <a href={site.whatsappHref} target="_blank" rel="noopener noreferrer">
