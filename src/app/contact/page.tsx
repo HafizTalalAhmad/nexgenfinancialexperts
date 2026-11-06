@@ -71,6 +71,37 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      {/* Booking widget */}
+      <section className="section-pad bg-secondary/40" aria-labelledby="booking-section">
+        <div className="container-site">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="eyebrow text-brand-blue">Skip the back-and-forth</p>
+            <h2 id="booking-section" className="mt-2 font-display text-3xl font-semibold text-brand-navy md:text-4xl">
+              Book a Free 15-Minute Consultation
+            </h2>
+            <p className="mt-4 text-base leading-7 text-muted-foreground md:text-lg">
+              Pick a time that works for you. We&apos;ll send a calendar invite with a video call link - no phone tag, no waiting.
+            </p>
+          </div>
+          <div className="mx-auto mt-8 max-w-4xl overflow-hidden rounded-2xl border border-border bg-card shadow-lg">
+            <iframe
+              title="Book a consultation with NexGen Financial Experts"
+              src="https://bookings.cloud.microsoft/book/NexGenFinancialExperts2@NexgenFinancialExperts.onmicrosoft.com/"
+              className="h-[700px] w-full"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+          <p className="mt-4 text-center text-sm text-muted-foreground">
+            Prefer to send a message instead?{" "}
+            <a href="#form-section" className="font-semibold text-primary hover:underline">
+              Use the contact form below
+            </a>
+          </p>
+        </div>
+      </section>
+
       <section className="section-pad" aria-labelledby="form-section">
         <div className="container-site grid items-start gap-12 lg:grid-cols-5">
           {/* Form */}
