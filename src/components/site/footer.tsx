@@ -106,6 +106,16 @@ export function SiteFooter() {
                   WhatsApp {site.whatsapp}
                 </a>
               </li>
+              <li className="pt-2">
+                <a
+                  href={site.bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg bg-primary px-3 py-1.5 text-xs font-semibold text-white shadow-sm transition hover:bg-brand-magenta-dark"
+                >
+                  Book a Consultation
+                </a>
+              </li>
               <li className="flex gap-3">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-blue" aria-hidden="true" />
                 <a href={`mailto:${site.email}`} className="break-all text-white/70 hover:text-white">{site.email}</a>
