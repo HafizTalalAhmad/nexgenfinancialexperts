@@ -14,7 +14,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { services } from "@/lib/services";
+import { services } from "@/lib/services"; 
+import { trackLead } from "@/lib/analytics";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -32,12 +33,13 @@ export function ContactForm() {
 
     const form = e.currentTarget;
     const fd = new FormData(form);
+    const serviceValue = String(fd.get("service") ?? "general").trim();
     const payload = {
       name: String(fd.get("name") ?? "").trim(),
       email: String(fd.get("email") ?? "").trim(),
       phone: String(fd.get("phone") ?? "").trim(),
       company: String(fd.get("company") ?? "").trim(),
-      service: String(fd.get("service") ?? "").trim(),
+      service: serviceValue,
       message: String(fd.get("message") ?? "").trim(),
       // spam traps
       website: String(fd.get("website") ?? ""), // honeypot (must stay empty)
@@ -65,6 +67,7 @@ export function ContactForm() {
       }
       setStatus("success");
       form.reset();
+      trackLead(serviceValue);
       toast({
         title: "Message sent",
         description:
