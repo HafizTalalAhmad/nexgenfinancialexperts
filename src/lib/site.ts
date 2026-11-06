@@ -14,6 +14,8 @@ export const site = {
   phoneHref: "tel:+19543063823",
   whatsapp: "+1 (954) 770-1568",
   whatsappHref: "https://wa.me/19547701568",
+  bookingUrl: "https://bookings.cloud.microsoft/book/NexGenFinancialExperts2@NexgenFinancialExperts.onmicrosoft.com/",
+  
   address: {
     street: "1975 East Sunrise Blvd",
     suite: "Suite 705",
