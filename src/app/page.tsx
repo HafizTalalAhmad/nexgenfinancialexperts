@@ -1,3 +1,4 @@
+"use client";  
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -31,7 +32,8 @@ import { SectionHeading, CtaBanner } from "@/components/site/section-blocks";
 import { Testimonials, FaqSection } from "@/components/site/testimonials";
 import { site } from "@/lib/site";
 import { services } from "@/lib/services";
-import { articles } from "@/lib/articles";
+import { articles } from "@/lib/articles"; 
+import { useTrackContactClick } from "@/hooks/use-track-click";
 
 const serviceHighlights = [
   {
@@ -163,6 +165,7 @@ const homeFaqs = [
 ];
 
 export default function HomePage() {
+  const trackSocial = useTrackContactClick("social");
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
@@ -323,8 +326,8 @@ export default function HomePage() {
           </p>
           <p className="flex items-center justify-center gap-2 text-center">
             <ShieldCheck className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-            Listed on <a className="underline hover:text-primary" href={site.social.yelp} target="_blank" rel="noopener noreferrer">Yelp</a> &amp;{" "}
-            <a className="underline hover:text-primary" href={site.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            Listed on <a onClick={trackSocial} className="underline hover:text-primary" href={site.social.yelp} target="_blank" rel="noopener noreferrer">Yelp</a> &amp;{" "}
+            <a onClick={trackSocial} className="underline hover:text-primary" href={site.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </p>
           <p className="flex items-center justify-center gap-2 text-center">
             <MessageCircle className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
