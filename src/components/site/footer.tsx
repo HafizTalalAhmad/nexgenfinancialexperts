@@ -1,4 +1,6 @@
-import Link from "next/link";
+"use client";  
+import Link from "next/link"; 
+import { useTrackContactClick } from "@/hooks/use-track-click";
 import Image from "next/image";
 import {
   MapPin,
@@ -13,9 +15,9 @@ import {
 } from "lucide-react";
 import { site } from "@/lib/site";
 import { services } from "@/lib/services";
-
 export function SiteFooter() {
   const year = new Date().getFullYear();
+  const trackSocial = useTrackContactClick("social");
   return (
     <footer className="mt-auto bg-brand-navy text-white/85">
       <div className="container-site py-14 md:py-16">
@@ -30,17 +32,20 @@ export function SiteFooter() {
               from our office in Fort Lauderdale to clients across Florida and beyond.
             </p>
             <div className="mt-5 flex items-center gap-3">
-              <a href={site.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="NexGen Financial Experts on Facebook" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-primary">
+              <a href={site.social.facebook} onClick={trackSocial} target="_blank" rel="noopener noreferrer" aria-label="NexGen Financial Experts on Facebook" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-primary">
                 <Facebook className="h-4 w-4" aria-hidden="true" />
               </a>
-              <a href={site.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="NexGen Financial Experts on Instagram" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-primary">
+              <a href={site.social.instagram} onClick={trackSocial} target="_blank" rel="noopener noreferrer" aria-label="NexGen Financial Experts on Instagram" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-primary">
                 <Instagram className="h-4 w-4" aria-hidden="true" />
               </a>
-              <a href={site.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="NexGen Financial Experts on LinkedIn" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-primary">
+              <a href={site.social.linkedin} onClick={trackSocial} target="_blank" rel="noopener noreferrer" aria-label="NexGen Financial Experts on LinkedIn" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-primary">
                 <Linkedin className="h-4 w-4" aria-hidden="true" />
               </a>
-              <a href={site.social.tiktok} target="_blank" rel="noopener noreferrer" aria-label="NexGen Financial Experts on TikTok" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-primary">
+              <a href={site.social.tiktok} onClick={trackSocial} target="_blank" rel="noopener noreferrer" aria-label="NexGen Financial Experts on TikTok" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-primary">
                 <Music2 className="h-4 w-4" aria-hidden="true" />
+              </a>
+              <a href={site.social.yelp} onClick={trackSocial} target="_blank" rel="noopener noreferrer" aria-label="NexGen Financial Experts on Yelp" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-primary">
+                <Star className="h-4 w-4" aria-hidden="true" />
               </a>
               <a href={site.social.yelp} target="_blank" rel="noopener noreferrer" aria-label="NexGen Financial Experts on Yelp" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-primary">
                 <Star className="h-4 w-4" aria-hidden="true" />
