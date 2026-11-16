@@ -6,6 +6,10 @@ import type { MetadataRoute } from "next";
 // `src/app/robots.ts`, DELETE THIS FILE — keeping two will cause a build
 // conflict. This is here as a safe default in case neither exists.
 
+// Required for Next.js 16 with `output: "export"` — without this, the
+// robots.txt route is treated as dynamic and the static export fails.
+export const dynamic = "force-static";
+
 const BASE = "https://nexgenfinancialexperts.com";
 
 export default function robots(): MetadataRoute.Robots {
