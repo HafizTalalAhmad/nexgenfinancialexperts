@@ -2,6 +2,8 @@
 // only — not individualized professional advice. Every article carries a
 // disclaimer and encourages consultation before decisions.
 
+import { articles2026 } from "./articles-2026-seo";
+
 export interface Article {
   slug: string;
   title: string;
@@ -128,6 +130,13 @@ export const articles: Article[] = [
       },
     ],
   },
+  // 2026 SEO content package — 8 long-form articles targeting Florida-specific
+  // accounting, tax, and advisory keywords. Defined in articles-2026-seo.ts so
+  // the long-form content stays in its own file; spread here so the existing
+  // Insights index and /insights/[slug] routes serve them with no template
+  // changes. The Article2026 interface is structurally identical to Article,
+  // so no cast is needed.
+  ...articles2026,
 ];
 
 export function getArticle(slug: string): Article | undefined {
