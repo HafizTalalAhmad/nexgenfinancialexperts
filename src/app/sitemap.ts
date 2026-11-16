@@ -11,6 +11,10 @@ import { articles } from "@/lib/articles";
 // slash (next.config `trailingSlash: true`). We emit trailing-slash URLs
 // here so Google indexes the canonical form from the first crawl.
 
+// Required for Next.js 16 with `output: "export"` — without this, the
+// sitemap.xml route is treated as dynamic and the static export fails.
+export const dynamic = "force-static";
+
 const BASE = "https://nexgenfinancialexperts.com";
 
 // Static routes that exist on the site today. Edit this list to match your
