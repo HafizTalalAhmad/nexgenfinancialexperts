@@ -7,7 +7,7 @@ export const site = {
   shortName: "NexGen",
   tagline: "Transforming Your Financial Future",
   description:
-    "NexGen Financial Experts provides accounting, tax, and business advisory services in Fort Lauderdale, FL — helping businesses stay compliant, make informed decisions, and grow with confidence.",
+  "NexGen Financial Experts provides accounting, tax, and business advisory services in Fort Lauderdale, FL — helping businesses stay compliant, make informed decisions, and grow with confidence.",
   url: "https://nexgenfinancialexperts.com",
   email: "paudalus@nexgenfinancialexperts.com",
   phone: "+1 (954) 306-3823",
@@ -43,6 +43,7 @@ export const primaryNav = [
   { label: "Services", href: "/services" },
   { label: "About", href: "/about" },
   { label: "Insights & Updates", href: "/insights" },
+  { label: "Florida Locations", href: "/locations" },
   { label: "Contact", href: "/contact" },
 ] as const;
 
