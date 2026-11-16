@@ -1,8 +1,12 @@
 import type { MetadataRoute } from "next";
-import { site } from "@/lib/site";
 
-// Required for `output: "export"`; already static in server mode.
-export const dynamic = "force-static";
+// App Router robots.txt generator. Produces /robots.txt at build time.
+//
+// If your project already has a `public/robots.txt` file OR an existing
+// `src/app/robots.ts`, DELETE THIS FILE — keeping two will cause a build
+// conflict. This is here as a safe default in case neither exists.
+
+const BASE = "https://nexgenfinancialexperts.com";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -10,10 +14,11 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/"],
+        // Disallow the Next.js internal chunks and Cloudflare email-decode script
+        disallow: ["/_next/", "/cdn-cgi/"],
       },
     ],
-    sitemap: `${site.url}/sitemap.xml`,
-    host: site.url,
+    sitemap: `${BASE}/sitemap.xml`,
+    host: BASE,
   };
 }
