@@ -17,7 +17,7 @@ const securityHeaders = [
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https://www.google-analytics.com",
       "font-src 'self' data:",
-      "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com",
+      "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://general-runtime.voiceflow.com https://runtime-api.voiceflow.com wss://general-runtime.voiceflow.com",
       "frame-src 'self' https://www.openstreetmap.org https://www.google.com https://maps.google.com https://bookings.cloud.microsoft",
       "frame-ancestors 'self'",
       "base-uri 'self'",
