@@ -4,7 +4,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { SiteHeader } from "@/components/site/header";
 import { SiteFooter } from "@/components/site/footer";
-import { GA4Script } from "@/components/site/ga4-script";
+import { VoiceflowWidget } from "@/components/site/voiceflow-widget";
 import { site } from "@/lib/site";
 
 const inter = Inter({
@@ -87,6 +87,7 @@ export default function RootLayout({
         </main>
         <SiteFooter />
         <Toaster />
+        <VoiceflowWidget />
       </body>
     </html>
   );
