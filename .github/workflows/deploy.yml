@@ -49,4 +49,4 @@ jobs:
             **/node_modules/**
             *.md
             *.log
-          dangerous-clean-slate: false
+          dangerous-clean-slate: true
