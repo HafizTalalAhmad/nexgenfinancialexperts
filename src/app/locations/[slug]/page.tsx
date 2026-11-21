@@ -12,8 +12,13 @@ export function generateStaticParams() {
 
 // Per-page metadata, scoped to each city. The canonical uses a trailing slash
 // to match the rest of the site's URL convention.
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const loc = locations.find((l) => l.slug === params.slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const loc = locations.find((l) => l.slug === slug);
   if (!loc) {
     return {
       title: "Location not found | NexGen Financial Experts",
@@ -86,8 +91,13 @@ function CheckIcon() {
   );
 }
 
-export default function LocationPage({ params }: { params: { slug: string } }) {
-  const loc = locations.find((l) => l.slug === params.slug);
+export default async function LocationPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const loc = locations.find((l) => l.slug === slug);
   if (!loc) {
     notFound();
   }
